@@ -1,0 +1,27 @@
+.bestiario{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+}
+.bestas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+.besta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    width: 350px;
+}
+.besta img{
+    height: 300px;
+    width: 100%;
+}
+.besta .sub{
+    color: #828282;
+}
+.title{
+    font-size: 3em;
+}

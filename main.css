@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Alexandria", sans-serif;
+    transition: 0.2s ease;
 }
 :root{
     --azul: rgba(12, 20, 184, 1);
@@ -41,6 +42,14 @@ button{
 a{
     text-decoration: none;
 }
+.title{
+    font-size: 2.25em;
+    font-weight: 700;
+}
+.sub{
+    color: var(--cinza);
+    font-weight: 300;
+}   
 header{
     height: 80px;
     padding: 1em 5em;
@@ -52,6 +61,9 @@ header{
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
+}
+header a:hover{
+    scale: 1.1;
 }
 header img{
     width: 250px;

@@ -1,15 +1,3 @@
-main{
-    padding: calc(2em + 80px) 5em;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-}
-
-.criar, .mestre{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 .title{
     font-size: 2.25em;
     font-weight: 700;
@@ -18,12 +6,6 @@ main{
     color: var(--cinza);
     font-weight: 300;
 }
-.criar button{
-    padding: 1em 2em;
-    background-color: var(--amarelo);
-    border-radius: 4px;
-}
-
 .fichascontainer{
     display: flex;
     flex-direction: column;
@@ -39,7 +21,7 @@ main{
 .ficha{
     background-color: var(--amarelo);
     padding: 12px;
-    width: clamp(375px, 600px, 33%);
+    width: clamp(375px, 50%, 500px);    
     border-radius: 8px;
 }
 .ficha img{
@@ -134,69 +116,17 @@ main{
     font-size: 1em;
     font-weight: 300;
 }
-.acessar{
+.criar{
     background-color: var(--azul2);
     color: white;
-    padding: 2em 1.5em;
+    padding: 4em;
     border-radius: 4px;
+    white-space: nowrap;
 }
-.bestiario{
+.criarcontainer{
+    width: clamp(375px, 50%, 500px);
+    height: 380px;
     display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin-top: 2em;
-}
-.bestas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-}
-.besta{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75em;
-    width: 350px;
-}
-.besta img{
-    height: 300px;
-    width: 100%;
-}
-.besta .sub{
-    color: #828282;
-}
-#bestadesc{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 3em;
-    width: 300px;
-}
-#bestadesc p{
-    line-height: 1.5em;
-    color: var(--cinza);
-    word-spacing: 12px;
-    text-align: justify;
-    width: 80%;
-    font-weight: 400;
-}
-.bestabtn{
-    background-color: var(--amarelo);
-    border-radius: 4px;
-    padding: 1em;
-    width: 200px;
-    color: black;
-    text-decoration: none;
-}
-.mestre a{
-    background-color: var(--amarelo);
-    width: 150px;
-    padding: 1em;
-    border-radius: 4px;
-    color: black;
-}
-@media (max-width: 675px){
-    main{
-        padding: calc(2em + 80px) 20px;
-    }
+    align-items: center;
 }
