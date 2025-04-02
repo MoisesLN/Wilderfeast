@@ -1,3 +1,12 @@
+header{
+    z-index: 1;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 .dadocontainer{
     display: flex;
     flex-direction: column;
@@ -25,6 +34,7 @@
     width: 175px;
     padding: 1.25em 0;
     border-radius: 8px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
 .rolar:hover{
     scale: 1.1;
@@ -44,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .btns{
     display: flex;
@@ -60,7 +71,6 @@
     gap: 0.5em;
     padding: 1em 0.5em;
     border-radius: 8px;
-    justify-self: flex-start;
     position: absolute;
     left: 0;
 }
@@ -73,9 +83,6 @@
     background-color: transparent;
     outline: none;
     border: none;
-}
-header{
-    z-index: 1;
 }
 @keyframes apertarBotao {
     0%{
@@ -93,4 +100,12 @@ header{
 }
 .rolar.animando {
     animation: apertarBotao 1s;
+}
+@media(max-width: 900px){
+    .SelecionarQnt{
+        position: static;
+    }
+    .btns{
+        gap: 2em;
+    }
 }

@@ -79,6 +79,34 @@ header a{
 p{
     font-size: 1em;
 }
+.efeito{
+    position: relative;
+    transition: 200ms ease;
+    overflow: hidden;
+}
+.efeito:hover{
+    scale: 1.1;
+}
+.efeito::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 45deg;
+    width: 5px;
+    height: 170%;
+    translate: -40px -20px;
+    transition: 200ms ease;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), white, rgba(255, 255, 255, 0.7));
+}
+.efeito:hover::after{
+    left: calc(100% + 80px);
+}
+.links a:nth-child(4):hover{
+    cursor: not-allowed;
+    color: var(--vermelho);
+    font-weight: 600;
+}
 @media (max-width: 675px){
     main{
         padding: calc(2em + 80px) 20px;
@@ -92,8 +120,8 @@ p{
 }
 @media (max-width: 550px){
     header img{
-        height: 32px;
-        width: 200px;
+        height: 24px;
+        width: 150px;
     }
     header{
         padding: 1em;
